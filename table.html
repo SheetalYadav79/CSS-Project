@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>ROWSPAN AND COLSPAN</title>
+        <style>
+             body{
+                background: rgba(4, 30, 114, 0.7);
+                margin: 50px;
+            }
+            .outer{
+                display: inline;
+                margin-top: 50px;
+                margin-left: 50px;
+                border: 5px solid ;
+                border-color: black;
+                color: red;
+                padding: 5px;
+            }
+            pre{
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            h2{
+                margin-left:50px;
+            }
+            h3{
+                margin-left:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="outer">HTML TABLE</h1>
+        <pre>
+            HTML tables allow web developers to arrange data into rows and columns.
+
+            A table in HTML consists of table cells inside rows and columns.
+        </pre>
+
+        <h2>Table Cells:</h2>
+
+        <pre>
+            Each table cell is defined by a < td> and a </ td> tag.
+
+            td stands for table data.
+
+            Everything between < td> and </ td> are the content of the table cell.
+
+            A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+        </pre>
+
+        <h2>Table Rows:</h2>
+
+        <pre>
+            Each table row starts with a < tr> and ends with a </ tr> tag.
+
+            tr stands for table row.
+        </pre>
+        
+        <h2>Table Headers:</h2>
+
+        <pre>
+            Sometimes you want your cells to be table header cells. In those cases use the < th> tag instead of the < td> tag:
+
+            th stands for table header.
+        </pre>
+
+        <h2>Table Padding And Spacing:</h2>
+
+        <pre>
+            HTML tables can adjust the padding inside the cells, and also the space between the cells.
+        </pre>
+
+        <h3>Cell Padding:</h3>
+
+        <pre>
+            Cell padding is the space between the cell edges and the cell content.
+
+            By default the padding is set to 0.
+        </pre>
+
+        <h3>Cell Spacing:</h3>
+
+        <pre>
+            Cell spacing is the space between each cell.
+
+            By default the space is set to 2 pixels.
+        </pre>
+
+        <h2>TABLE COLSPAN AND ROWSPAN:</h2>
+
+        <pre>
+            HTML tables can have cells that span over multiple rows and/or columns.
+        </pre>
+
+        <h3>Table-COLSPAN:</h3>
+
+        <pre>
+            To make a cell span over multiple columns, use the colspan attribute:
+            The value of the colspan attribute represents the number of columns to span.
+        </pre>
+
+        <h3>Table-ROWSPAN:</h3>
+
+        <pre>
+            To make a cell span over multiple rows, use the rowspan attribute:
+            The value of the rowspan attribute represents the number of rows to span.
+        </pre>
+        <hr color="red">
+
+        <h2>EXAMPLE OF TABLE IS GIVEN BELOW:</h2>
+        <table border="1" align="center" width="60%" cellpadding="10%">
+            <center><font size="10px"><caption><b>TIME TABLE</b></caption></font></center>
+            <tr height="80px">
+                <th>Day/Period</th>
+                <th>I<br>9:30-<br>10:20</th>
+                <th>II<br>10:20-<br>11:10</th>
+                <th>III<br>11:10-<br>12:00</th>
+                <th>12:00-<br>12:40</th>
+                <th>IV<br>12:40-<br>1:30</th>
+                <th>V<br>1:30-<br>2:20</th>
+                <th>VI<br>2:20-<br>3:10</th>
+                <th>VII<br>3:10-<br>4:00</th>
+            </tr>
+            <tr height="40px">
+                <td>Monday</td>
+                <td>Eng</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <td rowspan="5">LUNCH</td>
+                <td colspan="3">LAB</td>
+                <td>Phy</td>
+            </tr>
+            <tr height="40px">
+                <td>Tuesday</td>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td>SPORTS</td>
+            </tr>
+            <tr height="40px">
+                <td>Wednesday</td>
+                <td>Mat</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">Library</td>    
+            </tr>
+            <tr height="40px">
+                <td>Thursday</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+            </tr>
+            <tr height="40px">
+                <td>Friday</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+            </tr>
+        </table>
+    </body>
+</html>

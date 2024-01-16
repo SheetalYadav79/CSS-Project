@@ -1,0 +1,412 @@
+<html>
+    <head>
+        <title>FORM ASSIGNMENT</title>
+        <style>
+            body{
+                background: rgba(4, 30, 114, 0.7);
+                margin: 50px;
+            }
+            .outer{
+                display: inline;
+                margin-top: 50px;
+                margin-left: 50px;
+                border: 5px solid ;
+                border-color: black;
+                color: red;
+                padding: 5px;
+            }
+            pre{
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            h2{
+                margin-left:50px;
+                text-decoration: dashed 20px black;
+            }
+        </style>
+    </head>
+    <body leftmargin="200px">
+        <h1 class="outer">HTML FORMS</h1>
+        <pre>
+            An HTML form is used to collect user input. 
+            The user input is most often sent to a server for processing.
+        </pre>
+
+        <h1 class="outer">HTML FORM ELEMENTS</h1>
+
+        <h2>The < form> Element:</h2>
+        <pre>
+            The HTML < form> element is used to create an HTML form for user input:
+            The < form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+        </pre>
+
+        <h2>The < input> Element:</h2>
+        <pre>
+            The HTML < input> element is the most used form element.
+            An < input> element can be displayed in many ways, depending on the type attribute.
+        </pre>
+
+        <h2>The < label> Element:</h2>
+        <pre>
+            The < label> tag defines a label for many form elements.
+            The < label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+            The < label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the < label> element, it toggles the radio button/checkbox.
+            The for attribute of the < label> tag should be equal to the id attribute of the < input> element to bind them together.
+        </pre>
+
+        <h2>The < select> Element:</h2>
+        <pre>
+            The < select> element defines a drop-down list:
+            The < option> element defines an option that can be selected.
+            By default, the first item in the drop-down list is selected.   
+            To define a pre-selected option, add the selected attribute to the option:
+        </pre>
+
+        <h2>The < textarea> Element:</h2>
+        <pre>
+            The < textarea> element defines a multi-line input field (a text area):
+            The rows attribute specifies the visible number of lines in a text area.
+            The cols attribute specifies the visible width of a text area.
+        </pre>
+
+        <h2>The < button> Element:</h2>
+        <pre>
+            The < button> element defines a clickable button:
+            Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element.
+        </pre>
+
+        <h2>The < fieldset> and < legend> Elements:</h2>
+        <pre>
+            The < fieldset> element is used to group related data in a form.
+            The < legend> element defines a caption for the < fieldset> element.
+        </pre>
+
+        <h2>The < datalist> Element: </h2>
+        <pre>
+            The < datalist> element specifies a list of pre-defined options for an < input> element.
+            Users will see a drop-down list of the pre-defined options as they input data.     
+            The list attribute of the < input> element, must refer to the id attribute of the < datalist> element.
+        </pre>
+
+        <h2>The < output> Element:</h2>
+        <pre>
+            The < output> element represents the result of a calculation (like one performed by a script).
+        </pre>
+        <hr color="red">
+
+
+        <h1 class="outer">HTML INPUT TYPES</h2>
+        <pre>
+            The < input type="text"> defines a single-line input field for text input.
+
+            The < input type="radio"> defines a radio button.
+            Radio buttons let a user select ONE of a limited number of choices.
+
+            The < input type="checkbox"> defines a checkbox.
+            Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+            The < input type="submit"> defines a button for submitting the form data to a form-handler.
+            The form-handler is typically a file on the server with a script for processing input data.
+            The form-handler is specified in the form's action attribute.
+
+            The < input type="password"> defines a password field:
+
+            The < input type="reset"> defines a reset button that will reset all form values to their default values:
+
+            The < input type="button"> defines a button.
+
+            The < input type="color"> is used for input fields that should contain a color.
+            Depending on browser support, a color picker can show up in the input field.
+
+            The < input type="date"> is used for input fields that should contain a date.
+            Depending on browser support, a date picker can show up in the input field.
+
+            The < input type="datetime-local"> specifies a date and time input field, with no time zone.
+            Depending on browser support, a date picker can show up in the input field.
+
+            The < input type="email"> is used for input fields that should contain an e-mail address.
+            Depending on browser support, the e-mail address can be automatically validated when submitted.
+            Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+
+            The < input type="image"> defines an image as a submit button.
+T           he path to the image is specified in the src attribute.
+
+            The < input type="file"> defines a file-select field and a "Browse" button for file uploads.
+
+            The < input type="hidden"> defines a hidden input field (not visible to a user).
+            A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+            A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+            The < input type="month"> allows the user to select a month and year.
+            Depending on browser support, a date picker can show up in the input field.
+
+            The < input type="number"> defines a numeric input field.
+            You can also set restrictions on what numbers are accepted.
+            The following example displays a numeric input field, where you can enter a value from 1 to 5:
+
+            The < input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). 
+            Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes.
+
+            The < input type="search"> is used for search fields (a search field behaves like a regular text field).
+
+            The < input type="tel"> is used for input fields that should contain a telephone number.
+
+            The < input type="time"> allows the user to select a time (no time zone).
+            Depending on browser support, a time picker can show up in the input field.
+
+            The < input type="url"> is used for input fields that should contain a URL address.
+            Depending on browser support, the url field can be automatically validated when submitted.
+            Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.
+
+            The < input type="week"> allows the user to select a week and year.
+            Depending on browser support, a date picker can show up in the input field.
+        </pre>
+
+        <hr color="red">
+
+        <h1 class="outer">HTML INPUT ATTRIBUTES</h1>
+
+        <h2>The Value Attribute:</h2>
+        <pre>
+            The input value attribute specifies an initial value for an input field:
+        </pre>
+
+        <h2>The Readonly Attribute:</h2>
+        <pre>
+            The input readonly attribute specifies that an input field is read-only.
+            A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+            The value of a read-only input field will be sent when submitting the form!
+        </pre>
+
+        <h2>The Disabled Attrobute:</h2>
+        <pre>
+            The input disabled attribute specifies that an input field should be disabled.
+            A disabled input field is unusable and un-clickable.
+            The value of a disabled input field will not be sent when submitting the form!
+        </pre>
+
+        <h2>The Size Attribute:</h2>
+        <pre>
+            The input size attribute specifies the visible width, in characters, of an input field.
+            The default value for size is 20.
+            Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+        </pre>
+
+        <h2>The Placeholder Attribute:</h2>
+        <pre>
+            The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+            The short hint is displayed in the input field before the user enters a value.
+            The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+        </pre>
+
+        <h2>The Required Attribute:</h2>
+        <pre>
+            The input required attribute specifies that an input field must be filled out before submitting the form.
+            The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+        </pre>
+
+        <h2>The Autofocus Attribute:</h2>
+        <pre>
+            The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+        </pre>
+
+        <h2>The Height and Width Attribute:</h2>
+        <pre>
+            The input height and width attributes specify the height and width of an < input type="image"> element.
+        </pre>
+
+        <h2>The List Attribute:</h2>
+        <pre>
+            The input list attribute refers to a < datalist> element that contains pre-defined options for an < input> element.
+        </pre>
+
+        <h2>The Autocomplete Attribute:</h2>
+        <pre>
+            The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+            Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+            The autocomplete attribute works with < form> and the following < input> types: text, search, url, tel, email, password, datepickers, range, and color.
+        </pre>
+        <hr color="red">
+
+       <center> <h3>APPLICATION FORM</h3></center>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table width="100%" cellpadding="10px">
+                <tr>
+                    <td>Applicant's Full Name</td>
+                    <td>
+                        <select>
+                            <option>---Select---</option>
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Others</option>
+                        </select>
+                    <input type="text"></td>
+                    <td>Care Of</td>
+                    <td><label>Parents<input type="radio" name="Care Of"></label>
+                        <label>Guardian<input type="radio" nam="Care Of"></label>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>Father's Name</td>
+                    <td>
+                        <select disabled>
+                            <option>Mr.</option>
+                        </select>
+                        <input type="text">
+                    </td>
+                    <td>Mother's Name</td>
+                    <td>
+                        <select disabled>
+                            <option>Mrs.</option>
+                        </select>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><label>Male<input type="radio" name="Gender"></label>
+                    <label>Female<input type="radio" name="Gender"></label>
+                <label>Others<input type="radio" name="Gender"></label>
+                    </td>
+                    <td>Date of Birth</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>
+                        <select>
+                            <option>--Select</option>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Divorced</option>
+                            <option>Widowed</option>
+                        </select>
+                    </td>
+                        <td>Category</td>
+                        <td>
+                            <select>
+                                <option>--Select</option>
+                                <option>General</option>
+                                <option>OBC</option>
+                                <option>SC</option>
+                                <option>ST</option>
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Handicapped</td>
+                    <td><label>Yes<input type="radio" name="Handicapped"></label>
+                    <label>No<input type="radio" name="Handicapped"></label>
+                    </td>
+                    <td>Ex-Serviceman</td>
+                    <td><label>Yes<input type="radio" name="Ex-Serviceman"></label>
+                        <label>No<input type="radio" name="Ex-Serviceman"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EWS</td>
+                    <td><label>Yes<input type="radio" name="EWS"></label>
+                    <label>No<input type="radio" name="EWS"></label>
+                    </td>
+                    <td>Religion</td>
+                    <td>
+                        <select>
+                            <option>--Select--</option>
+                            <option>Hindu</option>
+                            <option>Muslim</option>
+                            <option>Jain</option>
+                            <option>Christianity</option>
+                        </select>
+                    </td>
+                </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <table width="100%" cellpadding="10px">
+            <tr>
+                <td>Mobile No.</td>
+                <td><input type="text"></td>
+                <td>Email ID</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Address Line 1</td>
+                <td><input type="text"></td>
+                <td>Address Line 2</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text"></td>
+                <td>State</td>
+                <td>
+                    <select>
+                        <option>--Select--</option>
+                        <optuon>Haryana</optuon>
+                        <option>Gujrat</option>
+                        <option>Rajasthan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Language Knowledge</legend>
+        <table width="100%" cellpadding="10px">
+            <tr>
+                <td>Language</td>
+                <td>Reading</td>
+                <td>Writing</td>
+                <td>Spoken</td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Urdu</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Identification Details</legend>
+        <table width="100%" cellpadding="10px">
+            <tr>
+                <td>Aadhar Card Number</td>
+                <td><input type="text"></td>
+                <td>PAN Card Number</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file"></td>
+                <td>Upload Signature</td>
+                <td><input type="file"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <center>
+        <input type="button" value="Submit">
+        <input type="button" value="Reset">
+    </center>
+        </form>
+    </body>
+</html>
